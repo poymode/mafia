@@ -1,7 +1,11 @@
 Mafia::Application.routes.draw do
   resources :roles
   resources :users
-  resources :games
+  resources :games do
+    member do
+      get "round"
+    end
+  end
 
 
   # The priority is based upon order of creation:

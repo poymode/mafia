@@ -1,0 +1,62 @@
+%h1 Welcome Poy. This is Game #1
+%h3 Role: Mafia
+%h3 Round: 1
+%h3 Players
+%h4 Table day
+%h5 Your voted: "No One"
+%table{:border => "1", :cellpadding => "5"}
+  %tr
+    %th Name
+    %th Role
+    %th Status
+    %th Votes
+    %th Action
+  %tr
+    %td Drix
+    %td Unknown
+    %td Alive
+    %td
+      (2) Fred,Terence
+    %td VOTED
+  %tr
+    %td Terence
+    %td Lynched
+    %td Mafia
+    %td 0
+    %td
+      %a{:href => "#"} Vote
+  %tr
+    %td Shiela
+    %td Unknown
+    %td Alive
+    %td 0
+    %td
+      %a{:href => "#"} Vote
+
+%h4 Table Night
+%h5 Your partner is killing: "No One"
+%h5 Your are killing: "No One"
+%table{:border => "1", :cellpadding => "5"}
+  %tr
+    %th Name
+    %th Role
+    %th Status
+    %th Action
+  %tr
+    %td Drix
+    %td Unknown
+    %td Alive
+    %td
+      %a{:href => "#"} Kill
+  %tr
+    %td Terence
+    %td Mafia
+    %td Alive
+    %td
+      %a{:href => "#"} Kill
+  %tr
+    %td Shiela
+    %td Unknown
+    %td Alive
+    %td
+      %a{:href => "#"} Kill
